@@ -3,7 +3,7 @@
 	max-width: 1224px;
 	margin: auto;
 
-	@media #{$brk-narrow} {
+	@include mobile {
 		width: 90%;
 	}
 }

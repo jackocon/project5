@@ -18,7 +18,7 @@ footer {
 	& {
 		display: none;
 
-		@media #{$brk-narrow}{
+		@include mobile {
 			display: inline;
 		}
 	}
@@ -30,7 +30,7 @@ footer {
 }
 
 .footer-nav-small{
-	@media #{$brk-narrow}{
+	@include mobile {
 		display: none;
 	}
 }

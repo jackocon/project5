@@ -21,20 +21,20 @@ nav {
 }
 
 nav li {
-	@media #{$brk-narrow}{
+	@include mobile {
 	display: inline;
 	margin-left: 20px;
 	}
 }
 
 nav li:first-child {
-	@media #{$brk-narrow}{
+	@include mobile {
 	margin-left: 0px;
 }
 }
 
 nav a {
-	@media #{$brk-narrow}{
+	@include mobile {
 	display: inline;
 	width: auto;
 	background: none;
@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-	@media #{$brk-narrow}{
+	@include mobile {
 	text-shadow: 1px 1px $color-white, 2px 2px $color-white, 3px 3px $color-white;
 	background: none;
 	color: #222;
@@ -51,14 +51,14 @@ nav a:hover {
 }
 
 header nav {
-	@media #{$brk-wide}{
+	@include desktop{
 		float: right;
 		margin-top: 30px;
 	}
 }
 
 header h1 {
-	@media #{$brk-wide}{
+	@include desktop{
 	float: left;
 	}
 }

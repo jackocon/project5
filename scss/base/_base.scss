@@ -42,13 +42,13 @@ ul {
 #about p,
 #contact p {
 font-size: $about-contact-p;
-@media #{$brk-narrow}{
+@include mobile {
 		font-size: 1.36rem;
 }
 }
 
 #about p {
-	@media #{$brk-narrow}{
+	@include mobile {
 		text-align: left;
 	}
 }
@@ -56,7 +56,7 @@ font-size: $about-contact-p;
 #about img {
 	box-shadow: 0 0 5px $Color-box-shad;
 
-	@media #{$brk-narrow}{
+	@include mobile {
 		float: right;
 		margin-left: 20px;
 	}
@@ -81,34 +81,14 @@ font-size: $about-contact-p;
 	max-width: 70%;
 	margin: auto;
 
-	@media #{$brk-narrow}{
+	@include mobile {
 		max-width: 80%;
 	}
-	@media #{$brk-wide}{
+	@include desktop {
 	max-width: 90%;
 	}
 }
 
-// .portfolio-item {
-// 	float: left;
-// 	width: $full-width;
-// 	margin: 20px 0px;
-//
-// 	@media #{$brk-narrow}{
-// 		width: calc(50% - 16px);
-// 		margin: 8px;
-// 		margin-bottom: 50px;
-// 	}
-// 	@media #{$brk-wide}{
-// 	width: calc(33.33% - 20px);
-// 	}
-// }
-
-// .portfolio-item:nth-child(1n+3) {
-// @media #{$brk-wide}{
-// 	clear: none;
-// }
-// }
 .workshop-page {
     display: flex;
     flex-wrap: wrap;
@@ -121,7 +101,7 @@ font-size: $about-contact-p;
 }
 
 .workshop-page li {
-	@media #{$brk-wide}{
+@include desktop{
 		max-width: 33%;
 		margin: 20px 20px;
 	}

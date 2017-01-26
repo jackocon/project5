@@ -1,0 +1,14 @@
+$brk-narrow : 768px;
+$brk-wide   : 1024px;
+
+@mixin mobile {
+  @media (min-width: #{$brk-narrow}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$brk-wide}) {
+    @content;
+  }
+}
