@@ -1,0 +1,21 @@
+.wrapper {
+	width: calc(100% - (30px));
+	max-width: 1224px;
+	margin: auto;
+
+	@media #{$brk-narrow} {
+		width: 90%;
+	}
+}
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+section {
+	padding: 20px 0px 50px;
+}

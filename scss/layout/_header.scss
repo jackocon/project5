@@ -1,0 +1,64 @@
+header {
+	width: $full-width;
+}
+
+nav {
+	& a {
+		@extend %nodecoration;
+		@extend %boldweight;
+		display: block;
+		padding: 10px;
+		margin-bottom: 4px;
+		background: $color-white;
+	  text-transform: uppercase;
+	  color: $color-a;
+	}
+
+	& a:hover {
+		background: $color-a-hover;
+		color: $color-white;
+	}
+}
+
+nav li {
+	@media #{$brk-narrow}{
+	display: inline;
+	margin-left: 20px;
+	}
+}
+
+nav li:first-child {
+	@media #{$brk-narrow}{
+	margin-left: 0px;
+}
+}
+
+nav a {
+	@media #{$brk-narrow}{
+	display: inline;
+	width: auto;
+	background: none;
+	padding: 10px 0px;
+}
+}
+
+nav a:hover {
+	@media #{$brk-narrow}{
+	text-shadow: 1px 1px $color-white, 2px 2px $color-white, 3px 3px $color-white;
+	background: none;
+	color: #222;
+}
+}
+
+header nav {
+	@media #{$brk-wide}{
+		float: right;
+		margin-top: 30px;
+	}
+}
+
+header h1 {
+	@media #{$brk-wide}{
+	float: left;
+	}
+}

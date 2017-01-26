@@ -1,0 +1,24 @@
+/*--------------------------------------------------
+MEDIA QUERIES
+--------------------------------------------------*/
+
+@media (min-width: 768px) {
+
+
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+
+
+ 	.portfolio-item {
+
+	}
+
+	.portfolio-item:nth-child(1n+3) {
+	clear: none;
+}
+}

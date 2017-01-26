@@ -1,0 +1,40 @@
+
+// Descriptive color variables
+
+$white              : #fff;
+$lightgrey          : #666;
+$midgrey            : #555;
+$darkgrey           : #333;
+$midnight           : #222;
+
+
+// Functional Color Variables
+
+$color-white          : $white;
+$color-text-base      : $lightgrey;
+$Color-box-shad       : $midgrey;
+$color-a              : $darkgrey;
+$color-a-hover        : $midnight;
+
+//Font stacks
+
+$stack-sans-serif : cursive, sans-serif;
+$stack-open-sans :  'Open Sans', $stack-sans-serif;
+$stack-ubuntu :     'Ubuntu', $stack-sans-serif;
+$stack-indie-flower : 'Indie Flower', $stack-sans-serif;
+
+// Font size
+
+$font-size-body : 16px;
+$about-contact-p : 1.15rem;
+$fs-footer : 0.8rem;
+$fs-footer-name : 1.2em;
+
+// Width 100%
+
+$full-width : 100%;
+
+// Media query breakpoints
+
+$brk-narrow : '(min-width: 768px)';
+$brk-wide   : '(min-width: 1024px)';

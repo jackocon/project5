@@ -1,0 +1,45 @@
+footer {
+	& {
+		border-top: 1px solid $color-text-base;
+		padding: 30px 0px;
+		width: $full-width;
+		font-size: $fs-footer;
+	}
+
+	& a {
+		@extend %nodecoration;
+		@extend %boldweight;
+		text-transform: uppercase;
+		color: $color-a;
+	}
+}
+
+.footer-nav {
+	& {
+		display: none;
+
+		@media #{$brk-narrow}{
+			display: inline;
+		}
+	}
+
+	&,
+	&-small {
+		float: right;
+	}
+}
+
+.footer-nav-small{
+	@media #{$brk-narrow}{
+		display: none;
+	}
+}
+
+
+
+.footer-name {
+	@extend %boldweight;
+	font-size: $fs-footer-name;
+	color: $color-a;
+	float: left;
+}
